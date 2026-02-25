@@ -3,8 +3,8 @@ import { defineComponent } from "vue"
 import { Download, Filter } from "lucide-vue-next"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { PageHeader } from "@/components/page-header"
-import { DataTable, type Column } from "@/components/data-table"
+import { PageHeader } from "@/components/ui/page-header"
+import { DataTable, type Column } from "@/components/ui/data-table"
 
 type LoginLog = {
   id: string

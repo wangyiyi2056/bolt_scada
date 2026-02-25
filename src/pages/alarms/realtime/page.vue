@@ -4,8 +4,8 @@ import { Bell, Volume2 } from "lucide-vue-next"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { PageHeader } from "@/components/page-header"
-import { StatCard } from "@/components/stat-card"
+import { PageHeader } from "@/components/ui/page-header"
+import { StatCard } from "@/components/ui/stat-card"
 
 const activeAlarms = [
   { id: "ALM-001", time: "2026-02-09 14:30:15", device: "PLC-Station-03", variable: "锅炉出口温度", value: "352.1°C", threshold: "> 350°C", level: "紧急", message: "温度传感器超上限", duration: "2 分钟" },

@@ -3,9 +3,9 @@ import { defineComponent } from "vue"
 import { RefreshCw } from "lucide-vue-next"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { PageHeader } from "@/components/page-header"
-import { StatCard } from "@/components/stat-card"
-import { StatusBadge } from "@/components/status-badge"
+import { PageHeader } from "@/components/ui/page-header"
+import { StatCard } from "@/components/ui/stat-card"
+import { StatusBadge } from "@/components/ui/status-badge"
 import { Cpu, Wifi, WifiOff, AlertTriangle } from "lucide-vue-next"
 
 const summary = { total: 164, online: 148, offline: 8, warning: 6, error: 2 }

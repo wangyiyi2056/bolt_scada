@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form"
-import { PageHeader } from "@/components/page-header"
-import { DataTable, type Column } from "@/components/data-table"
+import { PageHeader } from "@/components/ui/page-header"
+import { DataTable, type Column } from "@/components/ui/data-table"
 import {
   DropdownMenu,
   DropdownMenuContent,

@@ -4,7 +4,7 @@ import { ExternalLink } from "lucide-vue-next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
-import { PageHeader } from "@/components/page-header"
+import { PageHeader } from "@/components/ui/page-header"
 
 const systemInfo = [
   { label: "平台版本", value: "1.0.0" },

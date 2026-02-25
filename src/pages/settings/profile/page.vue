@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { PageHeader } from "@/components/page-header"
+import { PageHeader } from "@/components/ui/page-header"
 
 const themeOptions: Array<{ value: ThemeMode; label: string; icon: any }> = [
   { value: "light", label: "浅色", icon: Sun },

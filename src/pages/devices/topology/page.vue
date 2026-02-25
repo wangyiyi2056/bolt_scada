@@ -3,8 +3,8 @@ import { defineComponent } from "vue"
 import { Network, Server, Cpu, Radio, Monitor } from "lucide-vue-next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { PageHeader } from "@/components/page-header"
-import { StatusBadge } from "@/components/status-badge"
+import { PageHeader } from "@/components/ui/page-header"
+import { StatusBadge } from "@/components/ui/status-badge"
 
 const topologyNodes = [
   {

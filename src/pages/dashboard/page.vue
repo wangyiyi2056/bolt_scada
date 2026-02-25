@@ -3,9 +3,9 @@ import { defineComponent } from "vue"
 import { Cpu, Network, Variable, Bell, Server, AlertTriangle } from "lucide-vue-next"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { PageHeader } from "@/components/page-header"
-import { StatCard } from "@/components/stat-card"
-import { StatusBadge } from "@/components/status-badge"
+import { PageHeader } from "@/components/ui/page-header"
+import { StatCard } from "@/components/ui/stat-card"
+import { StatusBadge } from "@/components/ui/status-badge"
 import {
   ChartContainer,
   ChartLegend,

@@ -4,7 +4,7 @@ import { ref } from "vue"
 import { RefreshCw, Pause, Play } from "lucide-vue-next"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { PageHeader } from "@/components/page-header"
+import { PageHeader } from "@/components/ui/page-header"
 
 const realtimeVars = [
   { name: "锅炉出口温度", value: 285.6, unit: "°C", min: 200, max: 350, quality: "Good", trend: "up" },

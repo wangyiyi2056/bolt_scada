@@ -9,8 +9,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form"
-import { PageHeader } from "@/components/page-header"
-import { StatCard } from "@/components/stat-card"
+import { PageHeader } from "@/components/ui/page-header"
+import { StatCard } from "@/components/ui/stat-card"
 import {
   DropdownMenu,
   DropdownMenuContent,

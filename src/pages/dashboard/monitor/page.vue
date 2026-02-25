@@ -4,8 +4,8 @@ import { Activity, Cpu, HardDrive, Wifi, WifiOff, RefreshCw } from "lucide-vue-n
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { PageHeader } from "@/components/page-header"
-import { StatusBadge } from "@/components/status-badge"
+import { PageHeader } from "@/components/ui/page-header"
+import { StatusBadge } from "@/components/ui/status-badge"
 import {
   ChartContainer,
   ChartTooltip,

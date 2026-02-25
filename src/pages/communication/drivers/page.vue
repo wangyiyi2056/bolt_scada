@@ -4,7 +4,7 @@ import { Upload, Package } from "lucide-vue-next"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
-import { PageHeader } from "@/components/page-header"
+import { PageHeader } from "@/components/ui/page-header"
 
 const drivers = [
   { name: "Modbus TCP/RTU", version: "3.2.1", author: "System", status: "内置", updated: "2026-01-15", devices: 27, desc: "Modbus TCP/RTU 标准协议驱动" },

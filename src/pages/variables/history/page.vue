@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Label } from "@/components/ui/label"
-import { PageHeader } from "@/components/page-header"
+import { PageHeader } from "@/components/ui/page-header"
 import { ChartContainer, ChartTooltip, VisAxis, VisLine, VisXYContainer, type ChartConfig } from "@/components/ui/chart"
-import { DataTable, type Column } from "@/components/data-table"
+import { DataTable, type Column } from "@/components/ui/data-table"
 
 const historyData = Array.from({ length: 24 }, (_, i) => ({
   time: `${String(i).padStart(2, "0")}:00`,

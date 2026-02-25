@@ -3,9 +3,9 @@ import { defineComponent } from "vue"
 import { RefreshCw, Activity } from "lucide-vue-next"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { PageHeader } from "@/components/page-header"
-import { StatusBadge } from "@/components/status-badge"
-import { StatCard } from "@/components/stat-card"
+import { PageHeader } from "@/components/ui/page-header"
+import { StatusBadge } from "@/components/ui/status-badge"
+import { StatCard } from "@/components/ui/stat-card"
 
 const nodeMetrics = [
   {

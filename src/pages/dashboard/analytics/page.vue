@@ -2,8 +2,8 @@
 import { defineComponent } from "vue"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { PageHeader } from "@/components/page-header"
-import { StatCard } from "@/components/stat-card"
+import { PageHeader } from "@/components/ui/page-header"
+import { StatCard } from "@/components/ui/stat-card"
 import { TrendingUp, TrendingDown, BarChart3, PieChart as PieChartIcon } from "lucide-vue-next"
 import {
   ChartContainer,

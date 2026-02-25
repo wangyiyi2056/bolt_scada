@@ -4,7 +4,7 @@ import { GitBranch, GitCommit, Tag, RotateCcw } from "lucide-vue-next"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { PageHeader } from "@/components/page-header"
+import { PageHeader } from "@/components/ui/page-header"
 
 const versions = [
   { version: "v2.3.1", project: "智慧水务监控系统", date: "2026-02-09 14:00", author: "张明", type: "patch", changes: 3, desc: "修复管网压力显示异常", current: true },

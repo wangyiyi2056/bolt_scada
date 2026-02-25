@@ -3,9 +3,9 @@ import { defineComponent } from "vue"
 import { RefreshCw, Activity, ArrowUpDown } from "lucide-vue-next"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { PageHeader } from "@/components/page-header"
-import { StatCard } from "@/components/stat-card"
-import { StatusBadge } from "@/components/status-badge"
+import { PageHeader } from "@/components/ui/page-header"
+import { StatCard } from "@/components/ui/stat-card"
+import { StatusBadge } from "@/components/ui/status-badge"
 import { Wifi, WifiOff } from "lucide-vue-next"
 
 const stats = { totalChannels: 8, online: 6, warning: 2, offline: 0, totalTx: "12.5 MB", totalRx: "8.3 MB", avgLatency: "6ms" }
