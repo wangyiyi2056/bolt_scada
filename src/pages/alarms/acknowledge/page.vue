@@ -41,11 +41,11 @@ const statusColors: Record<string, string> = {
 }
 
 const columns: Column<AckRecord>[] = [
-  { key: "alarmId", title: "报警 ID", className: "font-mono text-xs w-[90px]" },
+  { key: "alarmId", title: "报警 ID", className: "font-mono w-[90px]" },
   { key: "message", title: "报警信息", render: (r) => <span class="font-medium text-card-foreground">{r.message}</span> },
   { key: "level", title: "级别", render: (r) => <Badge variant="outline" class={`text-[10px] ${levelColors[r.level] || ""}`}>{r.level}</Badge> },
-  { key: "triggerTime", title: "触发时间", className: "font-mono text-xs" },
-  { key: "ackTime", title: "确认时间", className: "font-mono text-xs" },
+  { key: "triggerTime", title: "触发时间", className: "font-mono" },
+  { key: "ackTime", title: "确认时间", className: "font-mono" },
   { key: "ackUser", title: "确认人" },
   { key: "ackNote", title: "处理备注", className: "text-xs max-w-[200px] truncate" },
   {

@@ -107,7 +107,7 @@ export default defineComponent({
             <CardHeader class="pb-2">
               <div class="flex items-center justify-between">
                 <CardTitle class="text-sm font-medium text-card-foreground">通信连接状态</CardTitle>
-                <div class="flex items-center gap-2 text-xs text-muted-foreground">
+                <div class="flex items-center gap-2 text-muted-foreground">
                   <Wifi class="h-3.5 w-3.5 text-success" />
                   <span>{`${connections.filter((c) => c.status === "online").length} 在线`}</span>
                   <WifiOff class="h-3.5 w-3.5 text-destructive" />

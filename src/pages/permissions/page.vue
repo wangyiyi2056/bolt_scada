@@ -136,7 +136,7 @@ const columns: Column<User>[] = [
     render: (u) => (
       <div class="flex items-center gap-2.5">
         <Avatar class="h-7 w-7">
-          <AvatarFallback class="bg-primary/10 text-primary text-xs">{u.name.charAt(0)}</AvatarFallback>
+          <AvatarFallback class="bg-primary/10 text-primary">{u.name.charAt(0)}</AvatarFallback>
         </Avatar>
         <div>
           <div class="text-sm font-medium text-card-foreground">{u.name}</div>

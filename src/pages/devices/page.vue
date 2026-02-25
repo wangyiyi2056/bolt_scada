@@ -142,14 +142,14 @@ function removeDevice(id: string) {
 }
 
 const columns: Column<Device>[] = [
-  { key: "id", title: "设备 ID", className: "w-[100px] font-mono text-xs" },
+  { key: "id", title: "设备 ID", className: "w-[100px] font-mono" },
   { key: "name", title: "设备名称", render: (d) => <span class="font-medium text-card-foreground">{d.name}</span> },
   {
     key: "type", title: "类型",
     render: (d) => <Badge variant="outline" class="text-xs font-normal">{d.type}</Badge>,
   },
   { key: "protocol", title: "协议" },
-  { key: "ip", title: "IP 地址", className: "font-mono text-xs" },
+  { key: "ip", title: "IP 地址", className: "font-mono" },
   { key: "node", title: "所属节点" },
   {
     key: "status", title: "状态",

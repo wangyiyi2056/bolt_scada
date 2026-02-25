@@ -130,7 +130,7 @@ function removeTemplate(id: string) {
 }
 
 const columns: Column<VarTemplate>[] = [
-  { key: "id", title: "ID", className: "w-[60px] font-mono text-xs" },
+  { key: "id", title: "ID", className: "w-[60px] font-mono" },
   {
     key: "name",
     title: "模板名称",

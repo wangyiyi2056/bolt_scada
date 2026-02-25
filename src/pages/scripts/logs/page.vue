@@ -38,10 +38,10 @@ const resultColors: Record<string, string> = {
 }
 
 const columns: Column<ScriptLog>[] = [
-  { key: "time", title: "执行时间", className: "font-mono text-xs w-[160px]" },
+  { key: "time", title: "执行时间", className: "font-mono w-[160px]" },
   { key: "script", title: "脚本名称", render: (l) => <span class="font-medium text-card-foreground">{l.script}</span> },
   { key: "trigger", title: "触发方式", render: (l) => <Badge variant="outline" class="text-[10px]">{l.trigger}</Badge> },
-  { key: "duration", title: "耗时", className: "font-mono text-xs" },
+  { key: "duration", title: "耗时", className: "font-mono" },
   { key: "result", title: "结果", render: (l) => <Badge variant="outline" class={`text-[10px] ${resultColors[l.result] || ""}`}>{l.result}</Badge> },
   { key: "output", title: "输出摘要", className: "text-xs text-muted-foreground max-w-[280px] truncate" },
 ]

@@ -81,7 +81,7 @@ export default defineComponent({
                       />
                     </div>
                   ))}
-                  <Button variant="outline" size="sm" class="mt-1 h-7 gap-1 self-start bg-transparent text-xs">
+                  <Button variant="outline" size="sm" class="mt-1 h-7 gap-1 self-start bg-transparent">
                     <Send class="h-3 w-3" />
                     <span>{"发送测试"}</span>
                   </Button>

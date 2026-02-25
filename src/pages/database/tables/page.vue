@@ -153,14 +153,14 @@ const sourceColors: Record<string, string> = {
 }
 
 const columns: Column<DbTable>[] = [
-  { key: "name", title: "表名", render: (t) => <code class="rounded bg-muted px-1.5 py-0.5 text-xs font-mono text-card-foreground">{t.name}</code> },
+  { key: "name", title: "表名", render: (t) => <code class="rounded bg-muted px-1.5 py-0.5 font-mono text-card-foreground">{t.name}</code> },
   { key: "source", title: "数据源", render: (t) => <Badge variant="outline" class={`text-[10px] ${sourceColors[t.source] || ""}`}>{t.source}</Badge> },
   { key: "type", title: "类型" },
-  { key: "rows", title: "行数", className: "font-mono text-xs text-right" },
-  { key: "size", title: "大小", className: "font-mono text-xs" },
+  { key: "rows", title: "行数", className: "font-mono text-right" },
+  { key: "size", title: "大小", className: "font-mono" },
   { key: "columns", title: "字段数" },
   { key: "indexes", title: "索引数" },
-  { key: "lastUpdated", title: "最后更新", className: "font-mono text-xs text-muted-foreground" },
+  { key: "lastUpdated", title: "最后更新", className: "font-mono text-muted-foreground" },
   {
     key: "actions",
     title: "",

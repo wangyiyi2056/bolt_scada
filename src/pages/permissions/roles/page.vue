@@ -306,7 +306,7 @@ export default defineComponent({
                     <div class="text-sm font-medium text-card-foreground">权限设置</div>
                     {permissionGroups.map((group) => (
                       <div key={group.name} class="rounded-lg border border-border p-3">
-                        <div class="mb-2 text-xs font-medium text-muted-foreground">{group.name}</div>
+                        <div class="mb-2 font-medium text-muted-foreground">{group.name}</div>
                         <div class="grid gap-2 md:grid-cols-2">
                           {group.items.map((permission) => (
                             <div key={permission} class="flex items-center justify-between rounded-md border border-border px-2.5 py-2">
@@ -389,7 +389,7 @@ export default defineComponent({
                   <div class="text-sm font-medium text-card-foreground">权限设置</div>
                   {permissionGroups.map((group) => (
                     <div key={group.name} class="rounded-lg border border-border p-3">
-                      <div class="mb-2 text-xs font-medium text-muted-foreground">{group.name}</div>
+                      <div class="mb-2 font-medium text-muted-foreground">{group.name}</div>
                       <div class="grid gap-2 md:grid-cols-2">
                         {group.items.map((permission) => (
                           <div key={permission} class="flex items-center justify-between rounded-md border border-border px-2.5 py-2">

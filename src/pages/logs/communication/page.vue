@@ -40,15 +40,15 @@ const resultColors: Record<string, string> = {
 }
 
 const columns: Column<CommLog>[] = [
-  { key: "time", title: "时间", className: "font-mono text-xs w-[120px]" },
-  { key: "channel", title: "通道", className: "font-mono text-xs" },
+  { key: "time", title: "时间", className: "font-mono w-[120px]" },
+  { key: "channel", title: "通道", className: "font-mono" },
   { key: "protocol", title: "协议", render: (l) => <Badge variant="outline" class="text-[10px] font-mono">{l.protocol}</Badge> },
   { key: "device", title: "设备", className: "text-xs" },
   { key: "direction", title: "方向", render: (l) => <Badge variant="outline" class="text-[10px]">{l.direction}</Badge> },
   { key: "dataFrame", title: "数据帧", render: (l) => <code class="rounded bg-muted px-1 py-0.5 text-[10px] font-mono text-card-foreground truncate max-w-[200px] block">{l.dataFrame}</code> },
   { key: "bytes", title: "字节" },
   { key: "result", title: "结果", render: (l) => <Badge variant="outline" class={`text-[10px] ${resultColors[l.result] || ""}`}>{l.result}</Badge> },
-  { key: "latency", title: "延迟", className: "font-mono text-xs" },
+  { key: "latency", title: "延迟", className: "font-mono" },
 ]
 
 export default defineComponent({

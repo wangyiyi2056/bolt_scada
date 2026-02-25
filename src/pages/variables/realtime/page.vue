@@ -70,7 +70,7 @@ export default defineComponent({
                         {v.quality === "Bad" ? "--" : v.value}
                       </span>
                       <span class="text-xs text-muted-foreground">{v.unit}</span>
-                      <span class="ml-1 text-xs text-muted-foreground">{trendSymbols[v.trend]}</span>
+                      <span class="ml-1 text-muted-foreground">{trendSymbols[v.trend]}</span>
                     </div>
                     <div class="mt-2">
                       <div class="relative h-1.5 rounded-full bg-secondary">

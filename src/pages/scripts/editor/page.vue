@@ -90,22 +90,22 @@ export default defineComponent({
                   <Badge variant="outline" class="text-[10px] bg-warning/10 text-warning border-warning/20">{"JavaScript"}</Badge>
                 </div>
                 <div class="flex items-center gap-1.5">
-                  <Button variant="outline" size="sm" class="h-7 gap-1 bg-transparent text-xs">
+                  <Button variant="outline" size="sm" class="h-7 gap-1 bg-transparent">
                     <RotateCcw class="h-3 w-3" />
                     <span>{"重置"}</span>
                   </Button>
-                  <Button variant="outline" size="sm" class="h-7 gap-1 bg-transparent text-xs">
+                  <Button variant="outline" size="sm" class="h-7 gap-1 bg-transparent">
                     <Save class="h-3 w-3" />
                     <span>{"保存"}</span>
                   </Button>
-                  <Button size="sm" class="h-7 gap-1 bg-primary text-primary-foreground hover:bg-primary/90 text-xs">
+                  <Button size="sm" class="h-7 gap-1 bg-primary text-primary-foreground hover:bg-primary/90">
                     <Play class="h-3 w-3" />
                     <span>{"运行"}</span>
                   </Button>
                 </div>
               </CardHeader>
               <CardContent class="flex-1 pt-0">
-                <div class="relative rounded-lg border border-border bg-muted/30 p-4 font-mono text-xs leading-6 overflow-auto max-h-[480px]">
+                <div class="relative rounded-lg border border-border bg-muted/30 p-4 font-mono leading-6 overflow-auto max-h-[480px]">
                   <pre class="text-card-foreground whitespace-pre-wrap">{sampleCode}</pre>
                 </div>
               </CardContent>

@@ -46,7 +46,7 @@ export default defineComponent({
                           <Badge variant="outline" class={`text-[10px] ${cfg.className}`}>{cfg.label}</Badge>
                           {v.current && <Badge variant="outline" class="text-[10px] bg-success/10 text-success border-success/20">{"当前版本"}</Badge>}
                         </div>
-                        <p class="mt-0.5 text-xs text-muted-foreground">{v.desc}</p>
+                        <p class="mt-0.5 text-muted-foreground">{v.desc}</p>
                         <div class="mt-1 flex items-center gap-3 text-[11px] text-muted-foreground">
                           <span>{v.project}</span>
                           <span>{v.author}</span>
@@ -56,7 +56,7 @@ export default defineComponent({
                       </div>
                     </div>
                     {!v.current && (
-                      <Button variant="outline" size="sm" class="h-7 gap-1.5 bg-transparent text-xs">
+                      <Button variant="outline" size="sm" class="h-7 gap-1.5 bg-transparent">
                         <RotateCcw class="h-3 w-3" />
                         <span>{"回滚"}</span>
                       </Button>

@@ -40,10 +40,10 @@ const resultColors: Record<string, string> = {
 }
 
 const columns: Column<LoginLog>[] = [
-  { key: "time", title: "时间", className: "font-mono text-xs w-[160px]" },
+  { key: "time", title: "时间", className: "font-mono w-[160px]" },
   { key: "user", title: "用户", render: (l) => <span class="font-medium text-card-foreground">{l.user}</span> },
   { key: "action", title: "操作", render: (l) => <Badge variant="outline" class="text-[10px]">{l.action}</Badge> },
-  { key: "ip", title: "IP 地址", className: "font-mono text-xs" },
+  { key: "ip", title: "IP 地址", className: "font-mono" },
   { key: "location", title: "来源", render: (l) => (
     <Badge variant="outline" class={`text-[10px] ${l.location === "外网" ? "bg-destructive/10 text-destructive border-destructive/20" : ""}`}>
       {l.location}

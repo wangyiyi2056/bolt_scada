@@ -193,10 +193,10 @@ const columns: Column<ScheduledTask>[] = [
   { key: "name", title: "任务名称", render: (t) => <span class="font-medium text-card-foreground">{t.name}</span> },
   { key: "cron", title: "Cron 表达式", render: (t) => <code class="rounded bg-muted px-1.5 py-0.5 text-[10px] font-mono text-card-foreground">{t.cron}</code> },
   { key: "cronDesc", title: "执行频率" },
-  { key: "nextRun", title: "下次执行", className: "font-mono text-xs" },
-  { key: "lastRun", title: "上次执行", className: "font-mono text-xs" },
+  { key: "nextRun", title: "下次执行", className: "font-mono" },
+  { key: "lastRun", title: "上次执行", className: "font-mono" },
   { key: "lastResult", title: "执行结果", render: (t) => <Badge variant="outline" class={`text-[10px] ${resultColors[t.lastResult] || ""}`}>{t.lastResult}</Badge> },
-  { key: "lastDuration", title: "耗时", className: "font-mono text-xs" },
+  { key: "lastDuration", title: "耗时", className: "font-mono" },
   { key: "status", title: "状态", render: (t) => <StatusBadge status={t.status} /> },
   {
     key: "enabled",

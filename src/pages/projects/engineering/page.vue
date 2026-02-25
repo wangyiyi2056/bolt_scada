@@ -152,7 +152,7 @@ function duplicateEngineering(engineering: Engineering) {
 }
 
 const columns: Column<Engineering>[] = [
-  { key: "id", title: "工程 ID", className: "w-[80px] font-mono text-xs" },
+  { key: "id", title: "工程 ID", className: "w-[80px] font-mono" },
   {
     key: "name",
     title: "工程名称",
@@ -177,7 +177,7 @@ const columns: Column<Engineering>[] = [
     key: "screens",
     title: "画面数",
     render: (e) => (
-      <div class="flex items-center gap-1 text-xs">
+      <div class="flex items-center gap-1">
         <Layers class="h-3 w-3 text-muted-foreground" />
         <span>{e.screens}</span>
       </div>

@@ -114,7 +114,7 @@ export default defineComponent({
                         </tr>
                         {group.children.map((item) => (
                           <tr key={item.name} class="border-b border-border last:border-b-0 hover:bg-muted/20">
-                            <td class="px-4 py-2 pl-9 text-xs text-card-foreground">{item.name}</td>
+                            <td class="px-4 py-2 pl-9 text-card-foreground">{item.name}</td>
                             <td class="px-4 py-2 text-center"><PermIcon allowed={item.admin} /></td>
                             <td class="px-4 py-2 text-center"><PermIcon allowed={item.engineer} /></td>
                             <td class="px-4 py-2 text-center"><PermIcon allowed={item.operator} /></td>

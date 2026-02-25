@@ -65,7 +65,7 @@ export default defineComponent({
                           </div>
                         </div>
                       </div>
-                      <Button variant="outline" size="sm" class="h-7 bg-transparent text-xs">{"确认"}</Button>
+                      <Button variant="outline" size="sm" class="h-7 bg-transparent">{"确认"}</Button>
                     </div>
                   </CardContent>
                 </Card>

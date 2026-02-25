@@ -36,9 +36,9 @@ const levelStyles: Record<string, string> = {
 }
 
 const columns: Column<HistoryAlarm>[] = [
-  { key: "id", title: "报警 ID", className: "w-[80px] font-mono text-xs" },
-  { key: "startTime", title: "开始时间", className: "font-mono text-xs" },
-  { key: "endTime", title: "结束时间", className: "font-mono text-xs" },
+  { key: "id", title: "报警 ID", className: "w-[80px] font-mono" },
+  { key: "startTime", title: "开始时间", className: "font-mono" },
+  { key: "endTime", title: "结束时间", className: "font-mono" },
   { key: "device", title: "设备", className: "text-xs" },
   { key: "message", title: "报警信息", render: (a) => <span class="font-medium text-card-foreground">{a.message}</span> },
   { key: "level", title: "级别", render: (a) => <Badge variant="outline" class={`text-[10px] ${levelStyles[a.level] || ""}`}>{a.level}</Badge> },

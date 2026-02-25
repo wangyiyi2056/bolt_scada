@@ -37,7 +37,7 @@ const levelColors: Record<string, string> = {
 }
 
 const columns: Column<SystemLog>[] = [
-  { key: "time", title: "时间", className: "font-mono text-xs w-[160px]" },
+  { key: "time", title: "时间", className: "font-mono w-[160px]" },
   { key: "level", title: "级别", render: (l) => <Badge variant="outline" class={`text-[10px] font-mono ${levelColors[l.level] || ""}`}>{l.level}</Badge> },
   { key: "source", title: "来源", render: (l) => <code class="rounded bg-muted px-1.5 py-0.5 text-[10px] font-mono text-card-foreground">{l.source}</code> },
   { key: "node", title: "节点" },

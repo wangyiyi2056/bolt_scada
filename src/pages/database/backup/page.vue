@@ -43,9 +43,9 @@ const columns: Column<BackupRecord>[] = [
   { key: "name", title: "备份名称", render: (b) => <span class="font-medium text-card-foreground">{b.name}</span> },
   { key: "type", title: "类型", render: (b) => <Badge variant="outline" class={`text-[10px] ${typeColors[b.type] || ""}`}>{b.type}</Badge> },
   { key: "source", title: "数据源" },
-  { key: "size", title: "大小", className: "font-mono text-xs" },
+  { key: "size", title: "大小", className: "font-mono" },
   { key: "duration", title: "耗时", className: "text-xs" },
-  { key: "time", title: "备份时间", className: "font-mono text-xs" },
+  { key: "time", title: "备份时间", className: "font-mono" },
   { key: "status", title: "状态", render: (b) => <Badge variant="outline" class={`text-[10px] ${statusColors[b.status] || ""}`}>{b.status}</Badge> },
   {
     key: "actions", title: "", className: "w-[40px]",

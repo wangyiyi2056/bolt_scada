@@ -147,13 +147,13 @@ const levelStyles: Record<string, string> = {
 }
 
 const columns: Column<AlarmRule>[] = [
-  { key: "id", title: "规则 ID", className: "w-[80px] font-mono text-xs" },
+  { key: "id", title: "规则 ID", className: "w-[80px] font-mono" },
   { key: "name", title: "规则名称", render: (a) => <span class="font-medium text-card-foreground">{a.name}</span> },
   { key: "variable", title: "关联变量", className: "text-xs" },
   {
     key: "condition", title: "条件",
     render: (a) => (
-      <span class="font-mono text-xs">{`${a.condition} ${a.threshold}`}</span>
+      <span class="font-mono">{`${a.condition} ${a.threshold}`}</span>
     ),
   },
   {

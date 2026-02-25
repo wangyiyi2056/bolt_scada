@@ -374,7 +374,7 @@ export default defineComponent({
                   </div>
                 </CardHeader>
                 <CardContent class="pt-0">
-                  <p class="mb-3 text-xs text-muted-foreground leading-relaxed">{ds.desc}</p>
+                  <p class="mb-3 text-muted-foreground leading-relaxed">{ds.desc}</p>
                   <div class="flex flex-col gap-1.5 border-t border-border pt-3">
                     <div class="flex items-center justify-between text-[11px]">
                       <span class="text-muted-foreground">{"地址"}</span>

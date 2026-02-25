@@ -297,7 +297,7 @@ export default defineComponent({
                   </div>
     
                   <div class="mt-4 flex items-center justify-between border-t border-border pt-3">
-                    <div class="flex items-center gap-3 text-xs text-muted-foreground">
+                    <div class="flex items-center gap-3 text-muted-foreground">
                       <span>{`${project.engineers} 工程`}</span>
                       <span>{`${project.devices} 设备`}</span>
                     </div>

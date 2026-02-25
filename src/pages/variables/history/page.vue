@@ -19,10 +19,10 @@ const historyData = Array.from({ length: 24 }, (_, i) => ({
 type HistoryRow = { time: string; temperature: number; pressure: number; flow: number; [key: string]: unknown }
 
 const columns: Column<HistoryRow>[] = [
-  { key: "time", title: "时间", className: "font-mono text-xs" },
-  { key: "temperature", title: "锅炉出口温度 (°C)", className: "font-mono text-xs", render: (r) => <span class="text-card-foreground">{r.temperature}</span> },
-  { key: "pressure", title: "锅炉出口压力 (MPa)", className: "font-mono text-xs", render: (r) => <span class="text-card-foreground">{r.pressure}</span> },
-  { key: "flow", title: "给水流量 (t/h)", className: "font-mono text-xs", render: (r) => <span class="text-card-foreground">{r.flow}</span> },
+  { key: "time", title: "时间", className: "font-mono" },
+  { key: "temperature", title: "锅炉出口温度 (°C)", className: "font-mono", render: (r) => <span class="text-card-foreground">{r.temperature}</span> },
+  { key: "pressure", title: "锅炉出口压力 (MPa)", className: "font-mono", render: (r) => <span class="text-card-foreground">{r.pressure}</span> },
+  { key: "flow", title: "给水流量 (t/h)", className: "font-mono", render: (r) => <span class="text-card-foreground">{r.flow}</span> },
 ]
 
 const chartConfig = {

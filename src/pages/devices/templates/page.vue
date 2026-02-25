@@ -258,7 +258,7 @@ export default defineComponent({
                     </div>
                     <div class="flex-1">
                       <h3 class="text-sm font-medium text-card-foreground">{tpl.name}</h3>
-                      <p class="mt-0.5 text-xs text-muted-foreground">{tpl.desc}</p>
+                      <p class="mt-0.5 text-muted-foreground">{tpl.desc}</p>
                     </div>
                   </div>
                   <div class="mt-3 flex items-center justify-between border-t border-border pt-3">

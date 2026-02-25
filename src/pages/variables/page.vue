@@ -145,10 +145,10 @@ function removeVariable(id: string) {
 }
 
 const columns: Column<Var>[] = [
-  { key: "id", title: "变量 ID", className: "w-[80px] font-mono text-xs" },
+  { key: "id", title: "变量 ID", className: "w-[80px] font-mono" },
   { key: "name", title: "变量名称", render: (v) => <span class="font-medium text-card-foreground">{v.name}</span> },
   { key: "device", title: "所属设备", className: "text-xs" },
-  { key: "address", title: "地址", className: "font-mono text-xs" },
+  { key: "address", title: "地址", className: "font-mono" },
   {
     key: "dataType", title: "数据类型",
     render: (v) => <Badge variant="outline" class="text-xs font-normal font-mono">{v.dataType}</Badge>,
@@ -164,7 +164,7 @@ const columns: Column<Var>[] = [
   {
     key: "value", title: "当前值",
     render: (v) => (
-      <span class={`font-mono text-xs font-medium ${v.quality === "Bad" ? "text-destructive" : "text-card-foreground"}`}>
+      <span class={`font-mono font-medium ${v.quality === "Bad" ? "text-destructive" : "text-card-foreground"}`}>
         {v.value}
       </span>
     ),
@@ -182,7 +182,7 @@ const columns: Column<Var>[] = [
     key: "group", title: "分组",
     render: (v) => <Badge variant="outline" class="text-xs font-normal">{v.group}</Badge>,
   },
-  { key: "updated", title: "更新时间", className: "font-mono text-xs text-muted-foreground" },
+  { key: "updated", title: "更新时间", className: "font-mono text-muted-foreground" },
   {
     key: "actions",
     title: "",

@@ -48,7 +48,7 @@ export default defineComponent({
                         <h3 class="text-sm font-medium text-card-foreground">{d.name}</h3>
                         <Badge variant="outline" class={`text-[10px] ${statusColors[d.status] || ""}`}>{d.status}</Badge>
                       </div>
-                      <p class="mt-0.5 text-xs text-muted-foreground">{d.desc}</p>
+                      <p class="mt-0.5 text-muted-foreground">{d.desc}</p>
                     </div>
                   </div>
                   <div class="mt-3 flex items-center justify-between border-t border-border pt-3 text-[11px] text-muted-foreground">

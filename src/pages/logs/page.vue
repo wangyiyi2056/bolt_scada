@@ -40,7 +40,7 @@ const resultStyles: Record<string, string> = {
 }
 
 const columns: Column<LogEntry>[] = [
-  { key: "time", title: "时间", className: "font-mono text-xs w-[160px]" },
+  { key: "time", title: "时间", className: "font-mono w-[160px]" },
   { key: "user", title: "操作人", render: (l) => <span class="font-medium text-card-foreground">{l.user}</span> },
   { key: "action", title: "操作" },
   {
@@ -49,7 +49,7 @@ const columns: Column<LogEntry>[] = [
     render: (l) => <Badge variant="outline" class="text-[10px] font-normal">{l.module}</Badge>,
   },
   { key: "target", title: "操作对象", className: "text-xs" },
-  { key: "ip", title: "IP", className: "font-mono text-xs" },
+  { key: "ip", title: "IP", className: "font-mono" },
   {
     key: "result",
     title: "结果",

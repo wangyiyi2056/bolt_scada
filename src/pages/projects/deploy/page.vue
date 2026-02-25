@@ -392,7 +392,7 @@ export default defineComponent({
                     </div>
                     <div class="flex items-center gap-1">
                       {dep.status === "failed" && (
-                        <Button variant="outline" size="sm" class="h-7 gap-1.5 bg-transparent text-xs" onClick={() => retryDeployment(dep.id)}>
+                        <Button variant="outline" size="sm" class="h-7 gap-1.5 bg-transparent" onClick={() => retryDeployment(dep.id)}>
                           <RotateCcw class="h-3 w-3" />
                           <span>重试</span>
                         </Button>

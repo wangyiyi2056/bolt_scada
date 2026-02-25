@@ -126,7 +126,7 @@ export default defineComponent({
                   </ChartContainer>
                   <div class="flex flex-1 flex-col gap-2">
                     {deviceTypeDistribution.map((item) => (
-                      <div key={item.name} class="flex items-center justify-between text-xs">
+                      <div key={item.name} class="flex items-center justify-between">
                         <div class="flex items-center gap-2">
                           <div class="h-2.5 w-2.5 rounded-sm" style={{ backgroundColor: item.color }} />
                           <span class="text-card-foreground">{item.name}</span>
@@ -150,7 +150,7 @@ export default defineComponent({
                 <div class="flex flex-col gap-3">
                   {alarmTypeStats.map((item) => (
                     <div key={item.type} class="flex flex-col gap-1.5">
-                      <div class="flex items-center justify-between text-xs">
+                      <div class="flex items-center justify-between">
                         <span class="text-card-foreground">{item.type}</span>
                         <span class="text-muted-foreground">{`${item.count} 次 (${item.percentage}%)`}</span>
                       </div>

@@ -177,12 +177,12 @@ function removeChannel(id: string) {
 }
 
 const columns: Column<Channel>[] = [
-  { key: "id", title: "通道 ID", className: "w-[80px] font-mono text-xs" },
+  { key: "id", title: "通道 ID", className: "w-[80px] font-mono" },
   { key: "name", title: "通道名称", render: (c) => <span class="font-medium text-card-foreground">{c.name}</span> },
   { key: "protocol", title: "协议", render: (c) => <Badge variant="outline" class="font-mono text-[10px]">{c.protocol}</Badge> },
   { key: "type", title: "类型" },
-  { key: "address", title: "地址", className: "font-mono text-xs" },
-  { key: "port", title: "端口/参数", className: "font-mono text-xs" },
+  { key: "address", title: "地址", className: "font-mono" },
+  { key: "port", title: "端口/参数", className: "font-mono" },
   { key: "devices", title: "设备数" },
   { key: "pollRate", title: "采集周期", className: "text-xs" },
   { key: "status", title: "状态", render: (c) => <StatusBadge status={c.status} /> },
