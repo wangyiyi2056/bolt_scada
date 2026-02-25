@@ -231,7 +231,7 @@ export default defineComponent({
         <div class="page-shell">
           <ConfirmDialog
             open={deleteOpen.value}
-            onOpenChange={(open: boolean) => {
+            onUpdate:open={(open: boolean) => {
               deleteOpen.value = open
               if (!open) pendingDeleteId.value = null
             }}
@@ -241,7 +241,7 @@ export default defineComponent({
           />
     
           <PageHeader title="角色管理" description="配置系统角色和权限模板">
-            <Dialog open={createOpen.value} onOpenChange={(open: boolean) => (createOpen.value = open)}>
+            <Dialog open={createOpen.value} onUpdate:open={(open: boolean) => (createOpen.value = open)}>
               <DialogTrigger asChild>
                 <Button
                   size="sm"
@@ -336,7 +336,7 @@ export default defineComponent({
             </Dialog>
           </PageHeader>
     
-          <Dialog open={editOpen.value} onOpenChange={(open: boolean) => (editOpen.value = open)}>
+          <Dialog open={editOpen.value} onUpdate:open={(open: boolean) => (editOpen.value = open)}>
             <DialogContent class="sm:max-w-[680px]">
               <DialogHeader>
                 <DialogTitle>编辑角色</DialogTitle>

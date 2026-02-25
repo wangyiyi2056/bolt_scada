@@ -203,7 +203,7 @@
         <div class="page-shell">
           <ConfirmDialog
             open={deleteOpen.value}
-            onOpenChange={(open: boolean) => {
+            onUpdate:open={(open: boolean) => {
               deleteOpen.value = open;
               if (!open) pendingDeleteId.value = null;
             }}
@@ -218,7 +218,7 @@
           >
             <Dialog
               open={createOpen.value}
-              onOpenChange={(open: boolean) => (createOpen.value = open)}
+              onUpdate:open={(open: boolean) => (createOpen.value = open)}
             >
               <DialogTrigger asChild>
                 <Button
@@ -328,7 +328,7 @@
 
           <Dialog
             open={editOpen.value}
-            onOpenChange={(open: boolean) => (editOpen.value = open)}
+            onUpdate:open={(open: boolean) => (editOpen.value = open)}
           >
             <DialogContent>
               <DialogHeader>

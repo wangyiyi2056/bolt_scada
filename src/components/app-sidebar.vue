@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import { computed } from "vue";
   import { navConfig } from "@/lib/nav-config";
   import TeamSwitcher from "@/components/team-switcher.vue";
   import NavMain from "@/components/nav-main.vue";
@@ -17,7 +18,8 @@
 
   defineOptions({ name: "AppSidebar" });
 
-  const { collapsed } = useSidebar();
+  const { state } = useSidebar();
+  const collapsed = computed(() => state.value === "collapsed");
 
   const navItems = navConfig.map((item) => ({
     title: item.title,

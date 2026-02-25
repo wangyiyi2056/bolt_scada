@@ -174,7 +174,7 @@ export default defineComponent({
         <div class="page-shell">
           <ConfirmDialog
             open={deleteOpen.value}
-            onOpenChange={(open: boolean) => {
+            onUpdate:open={(open: boolean) => {
               deleteOpen.value = open
               if (!open) pendingDeleteId.value = null
             }}
@@ -184,7 +184,7 @@ export default defineComponent({
           />
     
           <PageHeader title="变量模板" description="预定义变量集合模板，快速批量添加变量">
-            <Dialog open={createOpen.value} onOpenChange={(open: boolean) => (createOpen.value = open)}>
+            <Dialog open={createOpen.value} onUpdate:open={(open: boolean) => (createOpen.value = open)}>
               <DialogTrigger asChild>
                 <Button size="sm" class="h-8 gap-1.5 bg-primary text-primary-foreground hover:bg-primary/90">
                   <Plus class="h-3.5 w-3.5" />
@@ -248,7 +248,7 @@ export default defineComponent({
             </Dialog>
           </PageHeader>
     
-          <Dialog open={editOpen.value} onOpenChange={(open: boolean) => (editOpen.value = open)}>
+          <Dialog open={editOpen.value} onUpdate:open={(open: boolean) => (editOpen.value = open)}>
             <DialogContent>
               <DialogHeader>
                 <DialogTitle>编辑变量模板</DialogTitle>

@@ -23,7 +23,7 @@
   );
 
   const emit = defineEmits<{
-    openChange: [open: boolean];
+    "update:open": [open: boolean];
     confirm: [];
   }>();
 </script>
@@ -31,7 +31,7 @@
 <template>
   <Dialog
     :open="props.open"
-    @open-change="(open: boolean) => emit('openChange', open)"
+    @update:open="(open: boolean) => emit('update:open', open)"
   >
     <DialogContent>
       <DialogHeader>
@@ -41,7 +41,7 @@
         </DialogDescription>
       </DialogHeader>
       <DialogFooter>
-        <Button variant="outline" @click="emit('openChange', false)">
+        <Button variant="outline" @click="emit('update:open', false)">
           {{ props.cancelText }}
         </Button>
         <Button variant="destructive" @click="emit('confirm')">

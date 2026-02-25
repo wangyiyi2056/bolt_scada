@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { ref, watch, type Component } from "vue";
+  import { ref, watch, computed, type Component } from "vue";
   import { useRoute, useRouter } from "vue-router";
   import { ChevronRight } from "lucide-vue-next";
   import { cn } from "@/lib/utils";
@@ -27,7 +27,8 @@
 
   const route = useRoute();
   const router = useRouter();
-  const { collapsed } = useSidebar();
+  const { state } = useSidebar();
+  const collapsed = computed(() => state.value === "collapsed");
 
   const openMap = ref<Record<string, boolean>>({});
 
