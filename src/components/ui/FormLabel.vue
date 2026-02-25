@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { useAttrs } from "vue";
-  import Label from "./Label.vue";
+  import { Label } from "./label";
   import { cn } from "@/lib/utils";
   import { useFormItem } from "./form-context";
 

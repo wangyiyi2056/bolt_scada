@@ -1,11 +1,13 @@
 <script setup lang="ts">
-  import Dialog from "./Dialog.vue";
-  import DialogContent from "./DialogContent.vue";
-  import DialogDescription from "./DialogDescription.vue";
-  import DialogFooter from "./DialogFooter.vue";
-  import DialogHeader from "./DialogHeader.vue";
-  import DialogTitle from "./DialogTitle.vue";
-  import Button from "./Button.vue";
+  import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogFooter,
+    DialogHeader,
+    DialogTitle,
+  } from "./dialog";
+  import { Button } from "./button";
 
   defineOptions({ name: "ConfirmDialog" });
 

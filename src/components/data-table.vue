@@ -10,11 +10,11 @@
     TableRow,
   } from "@/components/ui/table";
   import { Input } from "@/components/ui/input";
+  import { Button } from "@/components/ui/button";
   import {
     Pagination,
     PaginationContent,
     PaginationItem,
-    PaginationLink,
     PaginationNext,
     PaginationPrevious,
   } from "@/components/ui/pagination";
@@ -160,9 +160,14 @@
             />
           </PaginationItem>
           <PaginationItem v-for="p in pageNumbers" :key="p">
-            <PaginationLink :is-active="p - 1 === page" @click="page = p - 1">
+            <Button
+              :variant="p - 1 === page ? 'outline' : 'ghost'"
+              size="icon"
+              class="h-8 w-8 text-xs"
+              @click="page = p - 1"
+            >
               {{ p }}
-            </PaginationLink>
+            </Button>
           </PaginationItem>
           <PaginationItem>
             <PaginationNext

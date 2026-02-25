@@ -35,14 +35,14 @@
     --chart-4: 0 78% 56%;
     --chart-5: 262 60% 52%;
     --radius: 0.5rem;
-    --sidebar-background: 220 25% 98%;
-    --sidebar-foreground: 222 28% 20%;
-    --sidebar-primary: 221 83% 53%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 20% 94%;
-    --sidebar-accent-foreground: 222 47% 14%;
-    --sidebar-border: 218 22% 89%;
-    --sidebar-ring: 221 83% 53%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
     --success: 160 84% 34%;
     --success-foreground: 0 0% 100%;
     --warning: 38 92% 50%;
@@ -73,14 +73,14 @@
     --chart-3: 36 84% 56%;
     --chart-4: 0 72% 53%;
     --chart-5: 262 60% 62%;
-    --sidebar-background: 224 45% 8%;
-    --sidebar-foreground: 214 25% 82%;
-    --sidebar-primary: 217 92% 60%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 223 31% 16%;
-    --sidebar-accent-foreground: 214 32% 91%;
-    --sidebar-border: 223 31% 16%;
-    --sidebar-ring: 217 92% 60%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
     --success: 159 75% 44%;
     --success-foreground: 0 0% 100%;
     --warning: 38 92% 56%;
@@ -159,5 +159,16 @@
 
   .page-shell > .grid {
     gap: 1.25rem;
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
